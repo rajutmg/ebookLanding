@@ -1,0 +1,1828 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+    font-family: "NeutraDisp";
+    src: url(/ALL/detox/fonts/NeutraDisp-Titling.otf);
+}
+
+@font-face {
+    font-family: "franklingothiclt";
+    src: url(/ALL/detox/fonts/franklingothiclt-demixcmpr-opentype_bigfontsite.com.otf);
+}
+
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375;
+    background: #fff;
+}
+
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 107%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body {
+        font-size: 84%;
+    }
+}
+
+.no-mar-pad {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.no-mar-padright {
+    padding-right: 0;
+}
+
+.no-mar-padleft {
+    padding-left: 0;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 0.9em;
+}
+
+button:focus {
+    outline: 0px auto -webkit-focus-ring-color;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 1.7em;
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+::selection {
+    background: #749357;
+    color: #fff;
+}
+
+#mainBanner {
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 540px) {
+    #mainBanner {
+        height: 128vh;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #mainBanner {
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #mainBanner {
+        height: 145vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #mainBanner {
+        height: 160vh;
+    }
+}
+
+#mainBanner h1, #mainBanner h2, #mainBanner h3, #mainBanner h4 {
+    font-family: "NeutraDisp";
+}
+
+#mainBanner .container {
+    height: 100%;
+}
+
+#mainBanner .container .bannerContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainBanner .personImage {
+    position: absolute;
+    height: 98%;
+    bottom: -1%;
+    left: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .personImage {
+        left: 0%;
+        bottom: 5%;
+        height: 55%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #mainBanner .personImage {
+        left: 0%;
+        bottom: -3%;
+        height: 55%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #mainBanner .personImage {
+        left: 0%;
+        bottom: -14%;
+        height: 55%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #mainBanner .personImage {
+        left: 0%;
+        bottom: -15%;
+        height: 55%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #mainBanner .personImage {
+        left: 0%;
+        bottom: -27%;
+        height: 55%;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg);
+    }
+}
+
+#mainBanner .bookImage {
+    position: absolute;
+    right: 1.5%;
+    height: 93%;
+    bottom: -5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: -5%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: -1%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: -12%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: -80px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #mainBanner .bookImage {
+        right: 0;
+        height: 35%;
+        bottom: -125px;
+    }
+}
+
+#mainBanner .bookPrice {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .bookPrice {
+        display: flex;
+        justify-content: end;
+        flex-direction: column-reverse;
+        bottom: 10%;
+    }
+}
+
+#mainBanner .bookPrice .priceHolder {
+    height: 27%;
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .bookPrice .priceHolder {
+        height: 20%;
+    }
+}
+
+#mainBanner .bookPrice .priceHolder .price {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .bookPrice .priceHolder .price {
+        font-size: 1.1em;
+    }
+}
+
+#mainBanner .bookPrice .priceHolder .price h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #ffe402;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0px 0px 1px #000;
+}
+
+#mainBanner .bookPrice .priceHolder .price p {
+    margin-bottom: 0;
+}
+
+#mainBanner .bookPrice .priceHolder img {
+    height: 100%;
+}
+
+#mainBanner .detoxDiet {
+    text-align: left;
+    left: 18%;
+    display: inline-block;
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #mainBanner .detoxDiet {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #mainBanner .detoxDiet {
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .detoxDiet {
+        left: 0;
+        z-index: 999;
+        bottom: 15%;
+        position: absolute;
+        width: 100%;
+        padding: 0 10%;
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #mainBanner .detoxDiet {
+        left: 0;
+        z-index: 999;
+        bottom: 14%;
+        position: absolute;
+        width: 100%;
+        padding: 0 10%;
+        margin-left: -40px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #mainBanner .detoxDiet {
+        left: 0;
+        z-index: 999;
+        bottom: 12%;
+        position: absolute;
+        width: 100%;
+        padding: 0 10%;
+        margin-left: -19px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #mainBanner .detoxDiet {
+        left: 30px;
+        z-index: 999;
+        bottom: 12%;
+        position: absolute;
+        width: 100%;
+        padding: 10px 0px;
+        margin-left: -40px;
+    }
+}
+
+#mainBanner .detoxDiet h1 {
+    font-size: 1.8em;
+    font-family: "Poppins", sans-serif;
+    background-image: linear-gradient(#fb892f, #ff4000);
+    padding: 12px 25px;
+    position: relative;
+    z-index: 99;
+    text-align: center;
+    border-radius: 8px;
+    color: #fff;
+}
+
+#mainBanner .detoxDiet .detoxDiteInner {
+    position: relative;
+}
+
+#mainBanner .detoxDiet .detoxDiteInner img {
+    height: 61px;
+    position: absolute;
+    bottom: -25px;
+    z-index: 99;
+    right: -29px;
+}
+
+#mainBanner .detoxDiet h1 span {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    #mainBanner .detoxDiet h1 {
+        line-height: 1;
+        font-size: 2em;
+        padding: 8px 25px;
+    }
+}
+    @media only screen and (max-width: 540px) {
+        #mainBanner .detoxDiet h1 {
+            line-height: 1;
+            font-size: 2em;
+            padding: 20px 25px;
+        }
+        #mainBanner .detoxDiet .detoxDiteInner img {
+            height: 50px;
+            bottom: -20px;
+            right: -23px;
+        }
+        #mainBanner .detoxDiet a {
+            font-size: 0.7em;
+        }
+        #mainBanner .detoxDiet h1 span {
+            font-size: 0.8rem;
+        }
+    }
+    #mainBanner .bannerContent {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        padding: 2% 0;
+    }
+    #mainBanner .bannerContent .detoxMain {
+        font-size: 4em;
+        background: -webkit-linear-gradient(#edffb6, #e7fea1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px !important;
+    }
+    #mainBanner .bannerContent .bannerTOp h1 {
+        font-size: 3.8em;
+        color: #012f07;
+        margin: 0;
+        line-height: 1;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent .bannerTOp h1 {
+            font-size: 2em;
+        }
+    }
+    #mainBanner .bannerContent .bannerTOp h1 span {
+        position: relative;
+    }
+    #mainBanner .bannerContent .bannerTOp h1 span::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/derore1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: -1;
+        top: 25px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent .bannerTOp h1 span::after {
+            height: 20px;
+            top: 7px;
+        }
+    }
+    #mainBanner .bannerContent .bannerTOp h1 span::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/decore.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -65px;
+        top: 25px;
+        z-index: -1;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent .bannerTOp h1 span::before {
+            height: 20px;
+            top: 7px;
+            left: -40px;
+        }
+    }
+    #mainBanner .bannerContent h2 {
+        color: #012f07;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent h2 {
+            font-size: 1.9em;
+        }
+    }
+    #mainBanner .bannerContent h3 {
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent h3 {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    #mainBanner .bannerContent ul {
+        padding-left: 23%;
+    }
+    #mainBanner .bannerContent ul li {
+        text-align: left;
+        text-transform: capitalize;
+        list-style: none;
+        position: relative;
+        margin-bottom: 30px;
+        color: #fff;
+        padding-left: 30px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 0.9em;
+        padding-top: 5px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent ul li {
+            padding-left: 15px;
+        }
+        #mainBanner .bannerContent ul {
+            padding-left: 34%;
+        }
+    }
+    #mainBanner .bannerContent ul li span {
+        color: #bdf16d;
+        font-weight: 600;
+    }
+    #mainBanner .bannerContent ul li::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 55px;
+        width: 55px;
+        background-image: url(/ALL/detox/img/DetoxIcon/uni-check.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: -4px;
+        left: -22px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent ul li::after {
+            height: 35px;
+            width: 35px;
+            top: 1px;
+            left: -20px;
+        }
+    }
+    #mainBanner .bannerContent ul li::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 80px;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/modern-rec.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: -20px;
+        left: -80px;
+        z-index: -1;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner .bannerContent ul li::before {
+            width: 238%;
+            top: -22px;
+            left: -76px;
+            z-index: -1;
+        }
+    }
+    .secGap {
+        padding: 80px 0;
+    }
+    @media only screen and (max-width: 600px) {
+        .secGap {
+            padding: 40px 0;
+        }
+    }
+    .secTitle {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .secTitle h1 {
+        font-size: 2.1em;
+        position: relative;
+        color: #749357;
+        font-weight: 700;
+    }
+    @media only screen and (max-width: 600px) {
+        .secTitle h1 {
+            font-size: 1.6em;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        #dearFrn {
+            margin-top: -20vh;
+        }
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        #dearFrn {
+            margin-top: -10vh !important;
+        }
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        #dearFrn {
+            margin-top: -10vh !important;
+        }
+    }
+    #dearFrn .questionBox h3 {
+        color: #42711f;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    #dearFrn .questionBox .imgBox {
+        padding: 15px;
+    }
+    @media only screen and (max-width: 600px) {
+        #dearFrn .questionBox .imgBox {
+            width: 220px;
+            height: 220px;
+            margin: 0 auto;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        #dearFrn .questionBox .imgBox img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    #dearFrn .questionBox .imgBox .circleImg {
+        border: 6px solid #e7e9eaa3;
+        border-radius: 50%;
+        height: 205px;
+        width: 205px;
+        overflow: hidden;
+    }
+    @media only screen and (max-width: 600px) {
+        #dearFrn .questionBox .imgBox .circleImg {
+            height: 195px;
+            width: 195px;
+        }
+    }
+    #dearFrn .questionBox .imgBox .circleImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media only screen and (max-width: 600px) {
+        #dearFrn .questionBox .imgBox .circleImg img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    #dearFrn .btmQuestion p {
+        font-size: 1em;
+    }
+    #truthFact {
+        height: 98vh;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #truthFact {
+            height: auto;
+            padding-bottom: 200px;
+        }
+    }
+    #truthFact .amoeba {
+        position: absolute;
+        height: 63vh;
+        top: 30vh;
+        left: -7vw;
+    }
+    @media only screen and (max-width: 600px) {
+        #truthFact .amoeba {
+            height: 200px;
+            top: auto;
+            bottom: 0;
+            left: -18vw;
+        }
+    }
+    #truthFact .amoebaTop {
+        position: absolute;
+        height: 67vh;
+        left: 8vw;
+        top: 27vh;
+    }
+    @media only screen and (max-width: 600px) {
+        #truthFact .amoebaTop {
+            height: 220px;
+            top: auto;
+            bottom: 0;
+            left: 5vw;
+        }
+    }
+    #truthFact h3 {
+        font-size: 1.06em;
+        font-weight: 600;
+    }
+    #truthFact ul {
+        padding: 0;
+    }
+    #truthFact ul li {
+        list-style: none;
+        line-height: 1.7;
+        font-size: 0.9em;
+    }
+    #truthFact p {
+        font-size: 0.9em;
+    }
+    #industryWrap {
+        background: #f2f2f2;
+        position: relative;
+        margin-top: 30px;
+    }
+    #industryWrap::before {
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/addCon1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: -230px;
+    }
+    @media only screen and (max-width: 600px) {
+        #industryWrap::before {
+            margin-top: -80px;
+        }
+    }
+    #industryWrap::after {
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/addCon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: 38px;
+    }
+    #industryWrap ul {
+        padding: 0;
+    }
+    #industryWrap ul li {
+        list-style: none;
+        line-height: 1.7;
+        font-size: 0.9em;
+    }
+    #industryWrap .addiRow .row {
+        margin: 0 -15px;
+    }
+    #industryWrap .industryModal {
+        width: 62%;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #industryWrap .industryModal {
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+    }
+    #industryWrap .industryModal img {
+        width: 100%;
+        object-fit: cover;
+        z-index: 2;
+        position: relative;
+    }
+    #industryWrap .industryModal .overImage {
+        position: absolute;
+        left: 0;
+        transform: rotate(-8deg);
+        opacity: 0.7;
+        z-index: 1;
+    }
+    #industryWrap .exhaustedImage {
+        width: 90%;
+    }
+    @media only screen and (max-width: 600px) {
+        #industryWrap .exhaustedImage {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    #journeyWrap {
+        padding: 55vh 0;
+        padding-bottom: 20vh;
+    }
+    @media only screen and (max-width: 600px) {
+        #journeyWrap {
+            padding: 50vh 0;
+            padding-bottom: 15vh;
+        }
+    }
+    #presentingWrap::before {
+        content: "";
+        position: absolute;
+        height: 100vw;
+        width: 100%;
+        background-image: url(/ALL/detox/img/DetoxIcon/conWhite.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 999;
+        margin-top: -230px;
+    }
+    @media only screen and (max-width: 600px) {
+        #presentingWrap::before {
+            margin-top: -75px;
+        }
+    }
+    #presentingWrap .topTitle h1 {
+        text-align: center;
+        color: red;
+        font-weight: 800;
+        font-size: 2.7em;
+    }
+    @media only screen and (max-width: 600px) {
+        #presentingWrap .topTitle h1 {
+            font-size: 2em;
+        }
+    }
+    #presentingWrap .sideBook {
+        width: 60%;
+    }
+    @media only screen and (max-width: 600px) {
+        #presentingWrap .sideBook {
+            margin: 0 auto;
+        }
+    }
+    #presentingWrap .presentLower {
+        position: relative;
+        overflow: hidden;
+    }
+    #presentingWrap .presentLower .amoeba2 {
+        position: absolute;
+        top: 0;
+        right: -15vh;
+        height: 66vh;
+    }
+    @media only screen and (max-width: 600px) {
+        #presentingWrap .presentLower .amoeba2 {
+            height: 25vh;
+            z-index: -1;
+            margin-top: 230px;
+        }
+    }
+    #presentingWrap .presentLower .fruitLady {
+        position: absolute;
+        top: -2%;
+        right: 10%;
+        width: 33vw;
+    }
+    @media only screen and (max-width: 600px) {
+        #presentingWrap .presentLower .fruitLady {
+            width: 45vw;
+            right: 0%;
+            top: 0%;
+            z-index: -1;
+            margin-top: 230px;
+        }
+    }
+    #bannerSecDiv {
+        padding: 20px 0;
+        text-align: center;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv {
+            overflow: hidden;
+        }
+    }
+    #bannerSecDiv h1, #bannerSecDiv h2, #bannerSecDiv h3, #bannerSecDiv h4 {
+        font-family: "NeutraDisp";
+    }
+    #bannerSecDiv .bookDivider {
+        position: absolute;
+        top: -74px;
+        right: 5%;
+        height: 145%;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .bookDivider {
+            top: 0;
+            right: -11%;
+            height: 101%;
+        }
+    }
+    #bannerSecDiv .detoxDiet {
+        margin: 17px 0;
+        margin-top: 35px;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .detoxDiet {
+            margin-top: 10px;
+            margin-bottom: 75px;
+        }
+    }
+    #bannerSecDiv .detoxDiet h1 a {
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+    }
+    #bannerSecDiv .detoxDiet h1 span {
+        font-size: 1.2rem;
+    }
+    #bannerSecDiv .detoxDiet .detoxDiteInner {
+        position: relative;
+        display: inline-block;
+        background-image: linear-gradient(#fb892f, #ff4000);
+        padding: 12px 25px;
+        border-radius: 8px;
+    }
+    #bannerSecDiv .detoxDiet .detoxDiteInner img {
+        height: 61px;
+        position: absolute;
+        bottom: -25px;
+        z-index: 99;
+        right: -29px;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .detoxDiet h1 {
+            font-size: 1.1em;
+            position: absolute;
+            width: 80%;
+            left: 0px;
+            bottom: -4px;
+            padding: 0px 20px;
+            line-height: 1.2;
+            text-align: left;
+        }
+        #bannerSecDiv .detoxDiet h1 span {
+            font-size: 0.8rem;
+        }
+        #bannerSecDiv .detoxDiet .detoxDiteInner img {
+            height: 50px;
+            bottom: -20px;
+            right: -23px;
+        }
+    }
+    /*
+@media only screen and (max-width: 600px) {
+  #bannerSecDiv .mobiMaintain .detoxDiet h1 {
+    left: -75px;
+}
+} */
+    #bannerSecDiv .detoxMain {
+        font-size: 4em;
+        background: -webkit-linear-gradient(#edffb6, #e7fea1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px !important;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .detoxMain {
+            font-size: 2em;
+        }
+    }
+    #bannerSecDiv h1 {
+        font-size: 1.6em;
+        color: #012f07;
+        margin: 0;
+        line-height: 1;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv h1 {
+            font-size: 2em;
+        }
+    }
+    #bannerSecDiv h2 {
+        color: #012f07;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv h2 {
+            font-size: 1.9em;
+        }
+    }
+    #bannerSecDiv h3 {
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv h3 {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    #bannerSecDiv .bookPrice {
+        position: absolute;
+        right: 27%;
+        height: 100%;
+        top: 6%;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .bookPrice {
+            display: flex;
+            justify-content: end;
+            flex-direction: column-reverse;
+            bottom: 10%;
+            top: 0%;
+            right: -4%;
+        }
+    }
+    #bannerSecDiv .bookPrice .priceHolder {
+        height: 50%;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .bookPrice .priceHolder {
+            height: 50%;
+        }
+    }
+    #bannerSecDiv .bookPrice .priceHolder .price {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 1;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5em;
+        padding: 20px;
+    }
+    @media only screen and (max-width: 600px) {
+        #bannerSecDiv .bookPrice .priceHolder .price {
+            font-size: 1.1em;
+        }
+    }
+    #bannerSecDiv .bookPrice .priceHolder .price h3 {
+        margin: 0;
+        font-size: 0.9em;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 0px 0px 1px #000;
+        margin: 5px 0;
+    }
+    #bannerSecDiv .bookPrice .priceHolder .price p {
+        margin-bottom: 0;
+        color: #ffe402;
+    }
+    #bannerSecDiv .bookPrice .priceHolder img {
+        height: 100%;
+    }
+    #dietWrap {
+        background: #f2f2f2;
+    }
+    #dietWrap .dietBox {
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    @media only screen and (max-width: 600px) {
+        #dietWrap .dietBox {
+            padding: 0 15px;
+            margin-bottom: 15px;
+        }
+    }
+    #dietWrap .dietBox .innerImage {
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px) {
+        #dietWrap .dietBox {
+            text-align: center;
+        }
+    }
+    #dietWrap .dietBox img {
+        margin: 0 auto;
+        height: 150px;
+    }
+    @media only screen and (max-width: 600px) {
+        #dietWrap .dietBox img {
+            height: 80px;
+        }
+    }
+    #dietWrap .dietBox h3 {
+        font-size: 1.05em;
+        color: #42711f;
+        font-weight: 700;
+    }
+    #dietWrap .italicWrap {
+        color: #42711f;
+        font-style: italic;
+    }
+    .miniDiv {
+        padding: 20px 0;
+        position: relative;
+        border-radius: 10px;
+        margin: 80px 0;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv {
+            margin: 40px 0;
+        }
+    }
+    .miniDiv h1, .miniDiv h2, .miniDiv h3, .miniDiv h4 {
+        font-family: "NeutraDisp";
+    }
+    .miniDiv .bookDivider {
+        position: absolute;
+        top: -86px;
+        right: 2%;
+        height: 162%;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .bookDivider {
+            top: 0;
+            right: 0%;
+            height: 70%;
+        }
+    }
+    .miniDiv .detoxDiet {
+        margin: 17px 0;
+        margin-top: 35px;
+        margin-left: -15px;
+    }
+    .miniDiv .detoxDiet .detoxDiteInner {
+        position: relative;
+        display: inline-block;
+        background-image: linear-gradient(#fb892f, #ff4000);
+        padding: 12px 25px;
+        border-radius: 8px;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .detoxDiet {
+            margin-top: 80px;
+        }
+    }
+    .miniDiv .detoxDiet h1 a {
+        color: #fff;
+        font-size: 0.5em;
+        font-family: "Poppins", sans-serif;
+        position: relative;
+    }
+    .miniDiv .detoxDiet .detoxDiteInner {
+        position: relative;
+        text-align: center;
+    }
+    .miniDiv .detoxDiet h1 span {
+        font-size: 1.2rem;
+    }
+    .miniDiv .detoxDiet .detoxDiteInner img {
+        height: 61px;
+        position: absolute;
+        bottom: -25px;
+        z-index: 99;
+        right: -29px;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .detoxDiet h1 a {
+            font-size: 0.5em;
+            position: absolute;
+            width: 120%;
+            bottom: -16px;
+            padding: 0px 0px;
+            left: 10px;
+        }
+    }
+    .miniDiv .detoxMain {
+        font-size: 4em;
+        background: -webkit-linear-gradient(#edffb6, #e7fea1);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20px !important;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .detoxMain {
+            font-size: 2em;
+        }
+    }
+    .miniDiv h1 {
+        font-size: 2.8em;
+        color: #012f07;
+        margin: 0;
+        line-height: 1;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv h1 {
+            font-size: 2.5em;
+            line-height: 1.3;
+        }
+        .miniDiv .detoxDiet h1 span {
+            font-size: 0.8rem;
+        }
+        .miniDiv .detoxDiet .detoxDiteInner img {
+            height: 50px;
+            bottom: -20px;
+            right: -23px;
+        }
+    }
+    .miniDiv h2 {
+        color: #012f07;
+        margin-bottom: 20px;
+        font-size: 2.2em;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv h2 {
+            font-size: 1.9em;
+        }
+    }
+    .miniDiv h3 {
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 1.3em;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv h3 {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    .miniDiv .bookPrice {
+        position: absolute;
+        right: 32%;
+        height: 100%;
+        top: 6%;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .bookPrice {
+            display: flex;
+            justify-content: end;
+            flex-direction: column-reverse;
+            bottom: 10%;
+            right: 0;
+            height: 100%;
+            top: -20%;
+        }
+    }
+    .miniDiv .bookPrice .priceHolder {
+        height: 50%;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .bookPrice .priceHolder {
+            height: 45%;
+        }
+    }
+    .miniDiv .bookPrice .priceHolder .price {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 1;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.5em;
+        padding: 20px;
+        text-align: center;
+    }
+    @media only screen and (max-width: 600px) {
+        .miniDiv .bookPrice .priceHolder .price {
+            font-size: 1em;
+        }
+    }
+    .miniDiv .bookPrice .priceHolder .price h3 {
+        margin: 0;
+        font-size: 0.9em;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-shadow: 0px 0px 1px #000;
+        margin: 5px 0;
+    }
+    .miniDiv .bookPrice .priceHolder .price p {
+        margin-bottom: 0;
+        color: #ffe402;
+    }
+    .miniDiv .bookPrice .priceHolder img {
+        height: 100%;
+    }
+    #notWrap .consider h1 {
+        color: red;
+    }
+    #notWrap .consider h1 span {
+        font-weight: 600;
+        color: #749357;
+    }
+    #notWrap .notForYou {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+    #notWrap ul {
+        padding-left: 20%;
+    }
+    @media only screen and (max-width: 600px) {
+        #notWrap ul {
+            padding-left: 10%;
+        }
+    }
+    #notWrap ul li {
+        list-style: none;
+        line-height: 2.7;
+        font-size: 0.9em;
+        position: relative;
+    }
+    #notWrap ul li::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        background-image: url(/ALL/detox/img/DetoxIcon/check.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: -39px;
+        top: 9px;
+    }
+    @media only screen and (max-width: 600px) {
+        #notWrap ul li::before {
+            height: 20px;
+            width: 20px;
+            left: -25px;
+        }
+    }
+    #downArrow {
+        padding-bottom: 20px;
+    }
+    #discoverWrap {
+        padding: 15vh 0;
+        padding-top: 30vh;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #discoverWrap {
+            padding: 7vh 0;
+            padding-top: 18vh;
+        }
+    }
+    #discoverWrap::before {
+        content: "";
+        position: absolute;
+        left: 41%;
+        bottom: 100%;
+        border-color: transparent transparent #ffffff transparent;
+        border-style: solid;
+        border-width: 94px;
+        top: 30px;
+        transform: rotate(180deg);
+    }
+    @media only screen and (max-width: 600px) {
+        #discoverWrap::before {
+            left: 35%;
+            border-width: 48px;
+        }
+    }
+    #discoverWrap .secTitle {
+        margin-bottom: 40px;
+    }
+    #discoverWrap .secTitle h1 {
+        color: #000;
+        font-weight: 800;
+    }
+    #dreamBody {
+        position: relative;
+        overflow: hidden;
+    }
+    #dreamBody img {
+        position: absolute;
+        right: -12%;
+        width: 50%;
+        bottom: 0;
+        z-index: -1;
+    }
+    #testimonialWrap {
+        background: #f2f2f2;
+    }
+    #testimonialWrap .row.testiCover {
+        margin-top: 150px;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #testimonialWrap .row.testiCover {
+            margin-top: 80px;
+        }
+        #dreamBody img {
+            position: relative;
+            width: 50%;
+            margin-bottom: -43px;
+            z-index: -1;
+        }
+    }
+    #testimonialWrap .row.testiCover::before {
+        content: '';
+        background-image: linear-gradient(#94b274, #749357);
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        border-radius: 10px;
+        top: -120px;
+    }
+    @media only screen and (max-width: 600px) {
+        #testimonialWrap .row.testiCover::before {
+            top: -80px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        #testimonialWrap .row.testiCover .boxCov:not(:last-child) {
+            margin-bottom: 70px;
+        }
+    }
+    #testimonialWrap .row.testiCover .testimonialBox {
+        background: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 8px #00000042;
+        height: 100%;
+        position: relative;
+        padding-bottom: 50px;
+    }
+    #testimonialWrap .row.testiCover .testimonialBox .testiImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-top: -85px;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 4px #00000063;
+        margin-bottom: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+        #testimonialWrap .row.testiCover .testimonialBox .testiImage {
+            width: 90px;
+            height: 90px;
+            margin-top: -65px;
+        }
+    }
+    #testimonialWrap .row.testiCover .testimonialBox .testiImage img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #testimonialWrap .row.testiCover .testimonialBox .name {
+        position: absolute;
+        bottom: 5px;
+        font-weight: 600;
+    }
+    #mainBanner.payBanner {
+        height: 350px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner.payBanner {
+            height: 200px;
+            position: relative;
+        }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #mainBanner.payBanner {
+            position: relative;
+        }
+    }
+    #mainBanner.payBanner .container .bannerContent {
+        justify-content: center;
+    }
+    #mainBanner.payBanner .personImage {
+        position: absolute;
+        height: auto;
+        bottom: auto;
+        left: 5%;
+        margin-top: 17px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner.payBanner .personImage {
+            height: 170px;
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            left: -42px;
+            margin-top: 30px;
+        }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #mainBanner.payBanner .personImage {
+            left: -18%;
+        }
+    }
+    #mainBanner.payBanner .bookImage {
+        position: absolute;
+        right: 8.5%;
+        height: 430px;
+        bottom: auto;
+        top: 0;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner.payBanner .bookImage {
+            height: 195px;
+            bottom: -3px;
+            right: -7px;
+            top: auto;
+        }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #mainBanner.payBanner .bookImage {
+            right: -12.5%;
+            height: 380px;
+            top: 21px;
+        }
+    }
+    #mainBanner.payBanner .bookPrice {
+        position: absolute;
+        right: 5%;
+        height: 90%;
+        top: 0;
+        height: 325px;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner.payBanner .bookPrice {
+            height: auto;
+        }
+    }
+    #mainBanner.payBanner .bookPrice .priceHolder {
+        height: 45%;
+        position: relative;
+    }
+    @media only screen and (max-width: 600px) {
+        #mainBanner.payBanner .bookPrice .priceHolder {
+            top: -100px;
+        }
+    }
+    #billingPage .secTitle h1 {
+        color: #012f07;
+        text-align: left;
+    }
+    #billingPage .secTitle h2 {
+        text-align: left;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    #billingPage .secTitle.lower {
+        margin-top: 40px;
+    }
+    #billingPage .secTitle h2 span {
+        color: #fe4805;
+    }
+    #billingPage .billingForm h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    @media only screen and (max-width: 600px) {
+        #billingPage .billingForm h1 {
+            font-size: 1.5em;
+        }
+    }
+    #billingPage ul {
+        padding-left: 45px;
+    }
+    #billingPage ul li {
+        list-style: none;
+        position: relative;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+    #billingPage ul li::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: 45px;
+        width: 45px;
+        background-image: url(../img/pay/check.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        top: -4px;
+        left: -48px;
+    }
+    #billingPage ul li span {
+        color: #fe5d13;
+        font-weight: 600;
+    }
+    #billingPage .billingForm {
+        border: 1px solid #ddd;
+        padding: 35px;
+    }
+    @media only screen and (max-width: 600px) {
+        #billingPage .billingForm {
+            margin-top: 30px;
+            padding: 20px;
+        }
+    }
+    #billingPage .billingForm .form-control {
+        border-radius: 0;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 0.6rem .75rem;
+        height: 45px;
+        display: inline-block;
+    }
+    @media only screen and (max-width: 600px) {
+        #billingPage .billingForm .form-control {
+            font-size: 14px;
+            padding: 0.5rem .75rem;
+            height: 40px;
+        }
+    }
+    #billingPage .billingForm .errorMessage p {
+        margin-top: -4px;
+        font-size: 13px;
+        color: red;
+    }
+    #billingPage .billingForm .basic .errorMessage p {
+        margin-top: 0;
+    }
+    #billingPage .billingForm .basic {
+        margin-bottom: 30px;
+    }
+    #billingPage .billingForm .viewBtn {
+        color: #fff;
+        font-size: 2em;
+        font-family: "franklingothiclt";
+        text-transform: uppercase;
+        background-image: linear-gradient(#fb892f, #ff4000);
+        display: initial;
+        padding: 10px 30px;
+        border-radius: 0;
+        position: relative;
+        margin-top: 30px;
+        display: grid;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #billingPage .billingForm .viewBtn span {
+        font-size: 0.4em;
+        text-transform: none;
+    }
+    #billingPage .billingForm .centeredBox {
+        text-align: center;
+    }
+    #billingPage .billingForm .centeredBox .payCard {
+        height: 85px;
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 600px) {
+        #billingPage .billingForm .centeredBox .payCard {
+            height: 70px;
+        }
+    }
+    #billingPage .billingForm .centeredBox .payBack {
+        height: 110px;
+    }
+    @media only screen and (max-width: 600px) {
+        #billingPage .billingForm .centeredBox .payBack {
+            height: 85px;
+        }
+    }
+    .form-control:focus {
+        border-color: #42711f;
+        box-shadow: 0 0 0 0rem rgba(0, 123, 255, 0.25);
+    }
+    #thankYou .secTitle h1 {
+        color: #012f07;
+    }
+    #thankYou .thankYOu {
+        background: #f2f2f2;
+        padding: 50px;
+    }
+    @media only screen and (max-width: 600px) {
+        #thankYou .thankYOu {
+            padding: 20px;
+        }
+    }
+    #thankYou .thankYOu p {
+        line-height: 2;
+    }
+    #bottomLink {
+        text-align: center;
+        margin-top: 50px;
+    }
+    #bottomLink p {
+        font-size: 14px;
+    }
+    #bottomLink p a {
+        margin: 0 5px;
+    }
+    #bottomLink p a:hover {
+        color: #fe5d13;
+    }
+    /*# sourceMappingURL=main.css.map */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #mainBanner {
+            height: 70vh;
+        }
+        #dearFrn .questionBox .imgBox {
+            padding: 15px 0;
+        }
+        #dearFrn .questionBox .imgBox .circleImg {
+            height: 120px;
+            width: 120px;
+            margin: 0 auto;
+        }
+        #mainBanner .bookImage {
+            right: 0;
+            height: 37%;
+            bottom: 42%;
+        }
+        #mainBanner .personImage {
+            height: 50%;
+            top: 9%;
+            left: -7%;
+            transform: rotate( 5deg);
+            -webkit-transform: rotate( 5deg);
+            -moz-transform: rotate( 5deg);
+            -ms-transform: rotate( 5deg);
+            -o-transform: rotate( 5deg);
+        }
+        #mainBanner .bookPrice .priceHolder {
+            height: 37%;
+        }
+        #mainBanner .bookPrice {
+            right: 0;
+            height: 40%;
+        }
+        #mainBanner .bannerContent ul li::before {
+            width: 135%;
+            top: -11px;
+            left: -85px;
+        }
+        #truthFact .amoeba {
+            height: 19vh;
+            top: 25vh;
+            left: -5vw;
+        }
+        #truthFact .amoebaTop {
+            height: 20vh;
+            left: 7vw;
+            top: 25vh;
+        }
+        #truthFact {
+            height: auto;
+        }
+        #industryWrap::before {
+            margin-top: -165px;
+        }
+        #presentingWrap::before {
+            margin-top: -165px;
+        }
+        #presentingWrap .presentLower .amoeba2 {
+            right: -15vh;
+            height: 25vh;
+        }
+        #presentingWrap .presentLower .fruitLady {
+            top: 3%;
+            right: 0%;
+            width: 33vw;
+        }
+        #presentingWrap .sideBook {
+            width: 85%;
+        }
+        #bannerSecDiv .bookDivider {
+            top: -38px;
+            right: 0%;
+            height: 130%;
+        }
+        #bannerSecDiv .bookPrice {
+            right: 0%;
+            height: 100%;
+            top: -30%;
+        }
+        #bannerSecDiv .bookPrice .priceHolder {
+            height: 58%;
+        }
+        #dietWrap .dietBox img {
+            height: 90px;
+        }
+        .miniDiv .bookDivider {
+            top: -25px;
+            right: 0%;
+            height: 122%;
+        }
+        .miniDiv .bookPrice {
+            right: 0%;
+            height: 100%;
+            top: -65px;
+        }
+        #testimonialWrap .row.testiCover .testimonialBox .testiImage {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    .bookPrice {
+        display: none !important;
+    }
