@@ -272,6 +272,9 @@ h4 {
   flex-direction: column;
   border-top-left-radius: 70px;
   background: #fff;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -285,6 +288,18 @@ h4 {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   #mainBanner .bannerContent {
     padding: 15px;
+  }
+}
+
+#mainBanner .bannerContent .bannerBg {
+  position: absolute;
+  width: 100%;
+  opacity: 0.2;
+}
+
+@media only screen and (max-width: 900px) {
+  #mainBanner .bannerContent .bannerBg {
+    height: 100%;
   }
 }
 
@@ -372,7 +387,7 @@ h4 {
 }
 
 #mainBanner .bannerContent p {
-  color: #90998b;
+  color: #317a08;
 }
 
 #mainBanner .bannerContent h2 {

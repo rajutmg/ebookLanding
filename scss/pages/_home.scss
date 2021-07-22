@@ -109,6 +109,9 @@
         flex-direction: column;
         border-top-left-radius: 70px;
         background: #fff;
+        overflow: hidden;
+        position: relative;
+        padding-left: 0;
         @include responsive(phone){
             padding: 20px;
     margin-top: 15px;
@@ -116,6 +119,14 @@
         }
         @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
             padding: 15px;
+        }
+        .bannerBg{
+            position: absolute;
+            width: 100%;
+            opacity: 0.2;
+            @include responsive(tab-port){
+                height: 100%;
+            }
         }
         .acessBtn {
             color: #fff;
@@ -189,7 +200,7 @@
         }
 
         p {
-            color: #90998b;
+            color: #317a08;
         }
 
         h2 {
